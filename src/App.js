@@ -1,7 +1,9 @@
+import DataInput from "./components/DataInput/DataInput";
+
 function App() {
   return (
     <div className="App">
-      <p>working</p>
+      <DataInput />
     </div>
   );
 }
