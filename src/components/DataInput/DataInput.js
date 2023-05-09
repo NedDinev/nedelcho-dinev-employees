@@ -18,7 +18,7 @@ export default function DataInput() {
   return (
     <>
       <input type="file" accept=".csv" onChange={handleFileUpload} />
-      {data.length ? <EmployeesTable data={data} /> : null}
+      {data.length && <EmployeesTable data={data} />}
     </>
   );
 }
