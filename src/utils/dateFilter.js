@@ -11,11 +11,4 @@ export const dateToTimestamp = (str) => {
 
 export const convertNull = (str) => (str !== "NULL" ? str : dateNow());
 
-export const convertDateFormat = (date) => {
-  let mydate = moment(date, "DD/MM/YYYY");
-
-  //format that date into a different format
-  return moment(mydate).format("MM-DD-YYYY");
-};
-
-export const dateNow = () => moment(new Date()).format("MM-DD-YYYY");
+export const dateNow = () => moment(new Date()).format("YYYY-MM-DD"); // converts today's date into "MM-DD-YYYY" format
