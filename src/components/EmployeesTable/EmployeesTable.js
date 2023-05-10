@@ -8,7 +8,7 @@ export default function EmployeesTable(props) {
   const filteredData = filterEmployees(data);
 
   return (
-    <Table striped bordered hover>
+    <Table responsive striped bordered hover>
       <thead>
         <tr>
           <th>Employee ID #1</th>
