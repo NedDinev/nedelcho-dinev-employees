@@ -15,3 +15,9 @@ const dateNow = () => moment(new Date()).format("YYYY-MM-DD"); // converts today
 
 export const dateFormatter = (dataString) =>
   dateToTimestamp(convertNullIfNeeded(dataString));
+
+export const millisecondsToDays = (maxWorkingDaysInMilliseconds) =>
+  maxWorkingDaysInMilliseconds / (1000 * 3600 * 24);
+
+export const calculateOverlapDays = (dateTo1, dateTo2, dateFrom1, dateFrom2) =>
+  Math.min(dateTo1, dateTo2) - Math.max(dateFrom1, dateFrom2);
