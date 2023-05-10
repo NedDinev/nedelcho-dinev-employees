@@ -1,10 +1,10 @@
-import { filterEmployees } from "../../utils/filterEmployees";
+import { filterEmployees } from "../../services/employeeService";
 
 import Table from "react-bootstrap/Table";
 
 export default function EmployeesTable(props) {
   const { data } = props;
-  console.log(data);
+
   const filteredData = filterEmployees(data);
 
   return (
