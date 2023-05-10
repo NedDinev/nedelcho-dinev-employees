@@ -1,11 +1,7 @@
 import DataInput from "./components/DataInput/DataInput";
 
 function App() {
-  return (
-    <div className="App">
-      <DataInput />
-    </div>
-  );
+  return <DataInput />;
 }
 
 export default App;
